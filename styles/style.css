@@ -1,0 +1,15 @@
+.header{
+    background-color: rgb(43,134,206);
+    width: 100%;
+    height: 5vh;
+    font-size: 4vh;
+    text-align: center;
+    color: white;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.header a::before{
+    content: "|";
+}
