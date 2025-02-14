@@ -1,4 +1,4 @@
-import posts from '../temp-server-respones/posts.json';
+//import posts from '../temp-server-respones/posts.json';
 
 const posts = [
     {
