@@ -1,0 +1,32 @@
+{
+  "@context": "https://somewhere.com",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "Каноническая ссылка на статью"
+  },
+  "headline": "Заголовок H1",
+  "image": {
+    "@type": "ImageObject",
+    "url": "Ссылка на изображение для превью статьи",
+    "width": "Высота изображения в пикселях",
+    "height": "Ширина изображения в пикселях"
+  },
+  "datePublished": "Дата публикации",
+  "dateModified": "Дата изменения",
+  "author": {
+    "@type": "Person",
+    "name": "Имя автора статьи"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Название организации",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "Ссылка на логотип компании",
+      "width": "Высота логотипа в пикселях",
+      "height": "Ширина логотипа в пикселях"
+    },
+    "description": "Краткое описание статьи"
+  }
+}
