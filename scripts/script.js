@@ -38,7 +38,8 @@ const posts = [
         senderLogo: 'images/test-img.svg'
     }
 ]
-function postGenerator(post){
+
+function postGenerator(post) {
     post.forEach(el => {
         //declare textElement node
         let textElement;
@@ -81,7 +82,7 @@ function postGenerator(post){
         listElementPostSender.append(
             listItemElementGroup,
             listItemElementSender
-            );
+        );
 
 //------coding Post Footer section --------------------------------------------------
         const listElementPostFooter = document.createElement('ul');
@@ -112,7 +113,7 @@ function postGenerator(post){
         )
 //------end of Post Footer section
         //titleElement
-        const titleElement= document.createElement('h1');
+        const titleElement = document.createElement('h1');
         titleElement.innerText = el.title;
         //paragraphElement
         const paragraphElement = document.createElement('p');
@@ -134,4 +135,5 @@ function postGenerator(post){
         }
     });
 }
+
 postGenerator(posts);

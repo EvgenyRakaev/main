@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="styles/style.css">
   <script src="scripts/script.js" defer></script>
   <script src="scripts/eventListener.js" defer></script>
-  <script src="scripts/postPublisher.js" defer></script>
+  <script src="scripts/postPublisher.js" defer type="module"></script>
+  <script src="scripts/postTemplate.js" defer type="module"></script>
 </head>
 <body>
 <nav>
@@ -55,7 +56,7 @@
   <div class="main-page">
     <div class="postCreation post">
       <p>Create a new post</p>
-      <input type="text">
+      <input type="text" id="newPost">
       <button>Publish</button>
     </div>
     <div class="post">
