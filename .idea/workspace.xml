@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9260c938-4e83-406b-aeaa-92458afa044a" name="Changes" comment="connected JS code generator">
+    <list default="true" id="9260c938-4e83-406b-aeaa-92458afa044a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/postPublisher.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/postPublisher.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +21,8 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="package.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -58,24 +61,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.index.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "branch1",
-    "last_opened_file_path": "C:/Users/yevge/OneDrive/Рабочий стол/FullStack PASV/main_project/temp-server-responses",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yevge/OneDrive/Рабочий стол/FullStack PASV/main_project/temp-server-responses&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yevge\OneDrive\Рабочий стол\FullStack PASV\main_project\temp-server-responses" />
@@ -103,6 +106,10 @@
       <workItem from="1739399572789" duration="27948000" />
       <workItem from="1739476959007" duration="13785000" />
       <workItem from="1739560062256" duration="13672000" />
+      <workItem from="1739587472739" duration="15382000" />
+      <workItem from="1739603731533" duration="1350000" />
+      <workItem from="1739689438763" duration="6119000" />
+      <workItem from="1739772372264" duration="1348000" />
     </task>
     <task id="LOCAL-00001" summary="some updates">
       <option name="closed" value="true" />
@@ -176,11 +183,82 @@
       <option name="project" value="LOCAL" />
       <updated>1739575214574</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Merged branch1">
+      <option name="closed" value="true" />
+      <created>1739577947323</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739577947323</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added some scripts">
+      <option name="closed" value="true" />
+      <created>1739590746433</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1739590746433</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added some scripts">
+      <option name="closed" value="true" />
+      <created>1739591406565</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1739591406565</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added post creator form">
+      <option name="closed" value="true" />
+      <created>1739591553218</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1739591553218</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added post creator form">
+      <option name="closed" value="true" />
+      <created>1739604046899</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1739604046899</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some updates" />
@@ -188,6 +266,9 @@
     <MESSAGE value="Added some content" />
     <MESSAGE value="Some updates" />
     <MESSAGE value="connected JS code generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="connected JS code generator" />
+    <MESSAGE value="Merged branch1" />
+    <MESSAGE value="Added some scripts" />
+    <MESSAGE value="Added post creator form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added post creator form" />
   </component>
 </project>

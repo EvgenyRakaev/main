@@ -1,5 +1,3 @@
-//import posts from '../temp-server-respones/posts.json';
-
 const posts = [
     {
         id: 0,
@@ -137,3 +135,13 @@ function postGenerator(post) {
 }
 
 postGenerator(posts);
+
+function localStoragePostRenderer(){
+    const localStoragePosts = [];
+    const keys = Object.keys(localStorage);
+    for (let i = 0; i < keys.length; i++) {
+        localStoragePosts.push(JSON.parse(localStorage[keys[i]]));
+    }
+    postGenerator(localStoragePosts);
+}
+localStoragePostRenderer();
