@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": "0",
     "title": "In a dapibus nulla.,",
     "post": "Aenean erat orci, egestas non orci at, varius tempus risus. Ut suscipit lorem magna, quis auctor leo molestie ac. Integer ut efficitur neque. Curabitur sollicitudin ipsum dolor, et tempus massa lacinia a. Donec efficitur egestas facilisis. Aliquam feugiat convallis arcu quis sollicitudin. Nullam eleifend iaculis sapien id scelerisque.",
     "groupName": "group name",
@@ -9,7 +9,7 @@
     "senderLogo": "images/test-img.svg"
   },
   {
-    "id": 1,
+    "id": "1",
     "title": "Pellentesque justo turpis,",
     "post": "ullamcorper in dapibus non, auctor at odio. Nulla interdum, lectus vel fringilla laoreet, libero ligula vulputate neque, quis tincidunt arcu ex sed ipsum. Aliquam a lobortis erat. Curabitur tristique aliquam lectus, tempor dignissim lorem tincidunt et. Vivamus velit velit, laoreet id iaculis quis, sagittis et magna. Morbi eget neque vestibulum, accumsan ipsum volutpat, interdum nulla. Cras maximus, diam ultricies tristique luctus, ex mi consectetur dui, ut feugiat magna purus et felis. Maecenas sit amet fringilla nunc. Donec vel ex vitae elit tincidunt pretium. Vivamus in nibh eu massa rhoncus finibus id quis orci. Proin vel libero quam. Vestibulum non maximus erat. Etiam condimentum, augue a rutrum efficitur, enim odio cursus elit, vitae fermentum dolor est in ipsum.",
     "groupName": "group name",
@@ -18,7 +18,7 @@
     "senderLogo": "images/test-img.svg"
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "Vivamus ultricies facilisis mauris,",
     "post": "non facilisis velit pretium in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce eget posuere nibh. Sed sit amet eleifend ante. Mauris scelerisque at turpis ut tristique. Morbi consequat lorem lectus. Fusce augue nulla, efficitur ac pulvinar non, laoreet non sem. Fusce malesuada tincidunt purus sollicitudin eleifend.",
     "groupName": "group name",
@@ -27,7 +27,7 @@
     "senderLogo": "images/test-img.svg"
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "Integer at pulvinar turpis,",
     "post": "nec dignissim ipsum. Nunc vitae dui lorem. Mauris egestas lacus nec luctus euismod. In eleifend erat ut ex tincidunt, sed blandit mauris commodo. Nullam nec est diam. In laoreet a orci et maximus. Phasellus commodo iaculis lectus. Fusce egestas mauris eget nunc dignissim, a blandit enim scelerisque. Vestibulum pulvinar odio et risus malesuada, id posuere justo facilisis. Sed non convallis ligula. Vestibulum vestibulum ipsum in arcu finibus vestibulum. Cras mattis accumsan dolor, sed condimentum nisi semper quis. Nullam pulvinar venenatis commodo.",
     "groupName": "group name",
