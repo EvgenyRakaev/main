@@ -1,20 +1,7 @@
 import React from 'react';
 import tempImage from '../images/test-img.svg'
-import postsJSON from '../temp-server-responses/posts.json'
 
-const Posts = () => {
-    const [posts, setPosts] = React.useState(postsJSON);
-    const newPosts = [];
-
-    Object.keys(localStorage).forEach(key => {
-        let post = JSON.parse(localStorage.getItem(key));
-        newPosts.push(post);
-    })
-
-    if (newPosts.length > 0 && posts.length === postsJSON.length) {
-        setPosts(prevPosts => [...prevPosts, ...newPosts]);
-    }
-
+const Posts = ({posts}) => {
     function renderPosts(posts) {
         return posts.map(post => (
             <div className="post" key={post.id}>

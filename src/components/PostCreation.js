@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PostCreation = () => {
+const PostCreation = ({updatePost}) => {
     const [inputText, setInputText] = React.useState('');
 
 
@@ -16,6 +16,7 @@ const PostCreation = () => {
                 "senderLogo": "images/test-img.svg"
             };
             localStorage.setItem(newPostJSON.id, JSON.stringify(newPostJSON));
+            updatePost();
         }
     }
 
