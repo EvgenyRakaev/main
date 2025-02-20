@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9260c938-4e83-406b-aeaa-92458afa044a" name="Changes" comment="Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostCreation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostCreation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="branch1" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,7 +65,7 @@
     &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ReactifyApp&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;build-for-github&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/yevge/OneDrive/Рабочий стол/FullStack PASV/fullstack-practice&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
