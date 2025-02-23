@@ -119,3 +119,19 @@ img{
     text-decoration: none;
     width: auto;
 }
+
+/*-----Projects App ----------*/
+.Projects{
+    color: #9f9;
+}
+
+.Projects li {
+    list-style: none;
+}
+.Projects li input{
+    text-decoration: none;
+}
+.Projects li:has(input:checked){
+    text-decoration: line-through;
+    color: #fbb;
+}
