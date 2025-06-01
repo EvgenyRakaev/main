@@ -1,54 +1,46 @@
 import React from 'react';
 import testImage from '../images/test-img.svg'
+import {Button, ButtonGroup, Card, CardBody, CardHeader} from "reactstrap";
 
 const RightMenu = () => {
     return (
-        <div className="right-menu">
-            <div>
-                <p>New contacts</p>
-                <ul>
-                    <li>
-                        <a href="">
-                            <img src={testImage} alt=""/>
-                            New friend1
-                        </a></li>
-                    <li>
-                        <a href="">
-                            <img src={testImage} alt=""/>
-                            New friend2
-                        </a></li>
-                </ul>
-            </div>
-            <div>
-                <p>Contacts</p>
-                <ul>
-                    <li>
-                        <a href="">
-                            <img src={testImage} alt=""/>
-                            Friend1
-                        </a></li>
-                    <li>
-                        <a href="">
-                            <img src={testImage} alt=""/>
-                            Friend2
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src={testImage} alt=""/>
-                            Friend3
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src={testImage} alt=""/>
-                            Friend4
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <Card style={{border: "none"}}>
+            <CardHeader>New contacts</CardHeader>
+            <CardBody>
+                <ButtonGroup vertical>
+                    <Button outline className="w-100" style={{border: "none", textAlign: "left", borderRadius: "5px"}}>
+                        <img src={testImage} alt=""/>
+                        New friend 1
+                    </Button>
 
-        </div>
+                    <Button outline className="w-100" style={{border: "none", textAlign: "left", borderRadius: "5px"}}>
+                        <img src={testImage} alt=""/>
+                        New friend 2
+                    </Button>
+                </ButtonGroup>
+            </CardBody>
+            <CardHeader>Contacts</CardHeader>
+            <CardBody>
+                <ButtonGroup vertical>
+                    <Button outline className="w-100" style={{border: "none", textAlign: "left", borderRadius: "5px"}}>
+                        <img src={testImage} alt=""/>
+                        Friend 1
+                    </Button>
+                    <Button outline className="w-100" style={{border: "none", textAlign: "left", borderRadius: "5px"}}>
+                        <img src={testImage} alt=""/>
+                        Friend 2
+                    </Button>
+                    <Button outline className="w-100" style={{border: "none", textAlign: "left", borderRadius: "5px"}}>
+                        <img src={testImage} alt=""/>
+                        Friend 3
+                    </Button>
+                    <Button outline className="w-100" style={{border: "none", textAlign: "left", borderRadius: "5px"}}>
+                        <img src={testImage} alt=""/>
+                        Friend 4
+                    </Button>
+                </ButtonGroup>
+            </CardBody>
+        </Card>
     );
 };
 

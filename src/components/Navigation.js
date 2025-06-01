@@ -1,21 +1,56 @@
-import React from 'react';
+import React, {useState} from 'react';
 import testImage from "../images/test-img.svg";
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+    NavbarText, Input,
+} from 'reactstrap';
 
 const Navigation = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => setIsOpen(!isOpen);
+
     return (
-        <nav>
-            <ul>
-                <li><img src={testImage} alt=""/></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-            <ul>
-                <li><a href="">Sign in</a></li>
-                <li><a href="">Sign up</a></li>
-            </ul>
-        </nav>
+        <Navbar expand="md" color="light" fixed="top">
+            <NavbarBrand href="/main/">Home</NavbarBrand>
+            <NavbarToggler onClick={toggle}/>
+            <Collapse isOpen={isOpen} navbar>
+                <Nav className="me-auto" navbar>
+                    <NavItem>
+                        <NavLink href="https://github.com/EvgenyRakaev/main">
+                            GitHub
+                        </NavLink>
+                    </NavItem>
+                    <UncontrolledDropdown nav inNavbar>
+                        <DropdownToggle nav caret>
+                            Projects
+                        </DropdownToggle>
+                        <DropdownMenu right>
+                            <DropdownItem><NavLink href="/main/todoApp/">Todo App</NavLink></DropdownItem>
+                            <DropdownItem><NavLink href="/main/shop/">Shop</NavLink></DropdownItem>
+                            <DropdownItem divider/>
+                            <DropdownItem>Reset</DropdownItem>
+                        </DropdownMenu>
+                    </UncontrolledDropdown>
+                    <NavItem>
+                        <NavLink href="/main/sign-in">Sign in</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink href="/main/signup">Sign up</NavLink>
+                    </NavItem>
+                </Nav>
+            </Collapse>
+        </Navbar>
     );
 };
 

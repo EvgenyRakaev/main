@@ -1,37 +1,34 @@
 import React from 'react';
 import testImage from "../images/test-img.svg";
+import {Button, ButtonGroup, Card, CardBody} from "reactstrap";
 
 const LeftMenu = () => {
     return (
-        <div className="left-menu">
-            <ul>
-                <li>
-                    <a href="">
-                        <img src={testImage} alt=""/>
-                        My page
-                    </a></li>
-                <li>
-                    <a href="">
-                        <img src={testImage} alt=""/>
-                        Friends
-                    </a></li>
-                <li>
-                    <a href="">
-                        <img src={testImage} alt=""/>
-                        Groups
-                    </a></li>
-                <li>
-                    <a href="">
-                        <img src={testImage} alt=""/>
-                        func4
-                    </a></li>
-                <li>
-                    <a href="">
-                        <img src={testImage} alt=""/>
-                        func5
-                    </a></li>
-            </ul>
-        </div>
+        <Card style={{border: "none"}}>
+            <ButtonGroup vertical >
+                <Button outline className="w-100" style={{border: "none", textAlign: "left", borderRadius: "5px"}}>
+                    <img src={testImage} alt=""/>
+                    My page
+                </Button>
+
+                <Button outline className="w-100" style={{border: "none", textAlign: "left", borderRadius: "5px"}}>
+                    <img src={testImage} alt=""/>
+                    Friends
+                </Button>
+                <Button outline className="w-100" style={{border: "none", textAlign: "left", borderRadius: "5px"}}>
+                    <img src={testImage} alt=""/>
+                    Groups
+                </Button>
+                <Button outline className="w-100" style={{border: "none", textAlign: "left", borderRadius: "5px"}}>
+                    <img src={testImage} alt=""/>
+                    Feature 4
+                </Button>
+                <Button outline className="w-100" style={{border: "none", textAlign: "left", borderRadius: "5px"}}>
+                    <img src={testImage} alt=""/>
+                    Feature 5
+                </Button>
+            </ButtonGroup>
+        </Card>
     );
 };
 
