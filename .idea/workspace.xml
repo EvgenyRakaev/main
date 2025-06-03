@@ -4,29 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9260c938-4e83-406b-aeaa-92458afa044a" name="Changes" comment="Reactstrap connected, style changed">
-      <change afterPath="$PROJECT_DIR$/src/components/PostCreation/PostCreation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PostCreation/PostCreationModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SignIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todoList/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todoList/Tasks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/todoList/TodoApp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux-store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostCreation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RightMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/temp-server-responses/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/temp-server-responses/posts.json" afterDir="false" />
+    <list default="true" id="0c022444-67c6-4aa6-a807-2f1636247168" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/handlers/localStorage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/dbConnection/dbConnection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main_project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/eventListener.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/postPublisher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/postTemplate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PostCreation/PostCreation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PostCreation/PostCreationModal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Posts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RightMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SignIn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoList/Form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoList/Tasks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todoList/TodoApp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/test-img.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux-store/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/remnants/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/temp-server-responses/posts-example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/temp-server-responses/posts.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,114 +64,73 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
-        <option value="package.json" />
+        <option value="Dockerfile" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/build-for-github" />
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="todoList" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;EvgenyRakaev&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "EvgenyRakaev"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/EvgenyRakaev/main.git&quot;,
-    &quot;accountId&quot;: &quot;1c418613-6717-464c-b4ad-d1809b225932&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/EvgenyRakaev/main.git",
+    "accountId": "1c418613-6717-464c-b4ad-d1809b225932"
   }
-}</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/index.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/temp-server-responses/posts.json" root0="SKIP_INSPECTION" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
-}</component>
-  <component name="ProjectId" id="2sxVijz1hQSiuSU7LSdAanSe5gb" />
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2xy5OKwDpfxvxeOpVrZeukgGK2Y" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.store.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/yevge/OneDrive/Рабочий стол/FullStack PASV/fullstack-practice&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.build.executor&quot;: &quot;Run&quot;,
-    &quot;npm.deploy.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\yevge\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.server/Dockerfile.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "ts.external.directory.path": "C:\\Users\\yevge\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\yevge\OneDrive\Рабочий стол\FullStack PASV\main_project\temp-server-responses" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\yevge\OneDrive\Рабочий стол\FullStack PASV\fullstack-practice\src\components\PostCreation" />
-      <recent name="C:\Users\yevge\OneDrive\Рабочий стол\FullStack PASV\fullstack-practice\src\remnants" />
-      <recent name="C:\Users\yevge\OneDrive\Рабочий стол\FullStack PASV\fullstack-practice\src" />
-      <recent name="C:\Users\yevge\OneDrive\Рабочий стол\FullStack PASV\fullstack-practice\src\images" />
-      <recent name="C:\Users\yevge\OneDrive\Рабочий стол\FullStack PASV\fullstack-practice\src\components" />
+      <recent name="C:\Users\yevge\OneDrive\Рабочий стол\FullStack PASV\fullstack-practice\server\src\dbConnection" />
+      <recent name="C:\Users\yevge\OneDrive\Рабочий стол\FullStack PASV\fullstack-practice\server" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.store.js">
-    <configuration name="store.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/redux-store/store.js" working-dir="$PROJECT_DIR$/src/redux-store">
+  <component name="RunManager" selected="npm.start">
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
       <method v="2" />
     </configuration>
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="deploy" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+    <configuration name="server/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="server/Dockerfile" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+      <package-json value="$PROJECT_DIR$/server/package.json" />
       <command value="run" />
       <scripts>
         <script value="start" />
@@ -154,11 +141,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.store.js" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.deploy" />
-        <item itemvalue="npm.build" />
-        <item itemvalue="npm.start" />
+        <item itemvalue="Docker.server/Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -169,226 +153,18 @@
       </set>
     </attachedChunks>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9260c938-4e83-406b-aeaa-92458afa044a" name="Changes" comment="" />
-      <created>1739397341720</created>
+      <changelist id="0c022444-67c6-4aa6-a807-2f1636247168" name="Changes" comment="" />
+      <created>1748897441064</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1739397341720</updated>
-      <workItem from="1739397343385" duration="2183000" />
-      <workItem from="1739399572789" duration="27948000" />
-      <workItem from="1739476959007" duration="13785000" />
-      <workItem from="1739560062256" duration="13672000" />
-      <workItem from="1739587472739" duration="15382000" />
-      <workItem from="1739603731533" duration="1350000" />
-      <workItem from="1739689438763" duration="6119000" />
-      <workItem from="1739772372264" duration="3150000" />
-      <workItem from="1739777241554" duration="1519000" />
-      <workItem from="1739844886867" duration="1188000" />
-      <workItem from="1739851135972" duration="12000" />
-      <workItem from="1739863394952" duration="1255000" />
-      <workItem from="1739870628155" duration="89000" />
-      <workItem from="1739909006041" duration="332000" />
-      <workItem from="1739934712371" duration="853000" />
-      <workItem from="1739935661208" duration="2013000" />
-      <workItem from="1739937737093" duration="1456000" />
-      <workItem from="1739939268870" duration="10488000" />
-      <workItem from="1740011907071" duration="3993000" />
-      <workItem from="1740270123812" duration="19016000" />
-      <workItem from="1742950380862" duration="32000" />
-      <workItem from="1747244900494" duration="9578000" />
-      <workItem from="1748705545579" duration="18338000" />
+      <updated>1748897441064</updated>
+      <workItem from="1748897443144" duration="16188000" />
     </task>
-    <task id="LOCAL-00001" summary="some updates">
-      <option name="closed" value="true" />
-      <created>1739397543781</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1739397543782</updated>
-    </task>
-    <task id="LOCAL-00002" summary="some updates">
-      <option name="closed" value="true" />
-      <created>1739397560070</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1739397560070</updated>
-    </task>
-    <task id="LOCAL-00003" summary="some updates">
-      <option name="closed" value="true" />
-      <created>1739397807681</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1739397807681</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add 2 projects and creating">
-      <option name="closed" value="true" />
-      <created>1739398597086</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1739398597086</updated>
-    </task>
-    <task id="LOCAL-00005" summary="some updatesa folder ideas">
-      <option name="closed" value="true" />
-      <created>1739398763785</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1739398763785</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added some content">
-      <option name="closed" value="true" />
-      <created>1739400885909</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1739400885909</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Some updates">
-      <option name="closed" value="true" />
-      <created>1739447037767</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1739447037767</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Some updates">
-      <option name="closed" value="true" />
-      <created>1739496179494</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1739496179494</updated>
-    </task>
-    <task id="LOCAL-00009" summary="connected JS code generator">
-      <option name="closed" value="true" />
-      <created>1739575214574</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1739575214574</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Merged branch1">
-      <option name="closed" value="true" />
-      <created>1739577947323</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1739577947323</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Added some scripts">
-      <option name="closed" value="true" />
-      <created>1739590746433</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1739590746433</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Added some scripts">
-      <option name="closed" value="true" />
-      <created>1739591406565</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1739591406565</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Added post creator form">
-      <option name="closed" value="true" />
-      <created>1739591553218</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1739591553218</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Added post creator form">
-      <option name="closed" value="true" />
-      <created>1739604046899</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1739604046899</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Saving posts into the local storage.&#10;Add posts from the local storage.">
-      <option name="closed" value="true" />
-      <created>1739774156508</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1739774156508</updated>
-    </task>
-    <task id="LOCAL-00016" summary="README.md updated">
-      <option name="closed" value="true" />
-      <created>1739949269233</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1739949269233</updated>
-    </task>
-    <task id="LOCAL-00017" summary="now it deploys to gh-pages repo when need">
-      <option name="closed" value="true" />
-      <created>1740036386202</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1740036386202</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="main" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="HEAD" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="some updates" />
-    <MESSAGE value="some updatesa folder ideas" />
-    <MESSAGE value="Added some content" />
-    <MESSAGE value="Some updates" />
-    <MESSAGE value="connected JS code generator" />
-    <MESSAGE value="Merged branch1" />
-    <MESSAGE value="Added some scripts" />
-    <MESSAGE value="Added post creator form" />
-    <MESSAGE value="Saving posts into the local storage.&#10;Add posts from the local storage." />
-    <MESSAGE value="React App added. Most JS code updated to React" />
-    <MESSAGE value="README.md updated" />
-    <MESSAGE value="Done" />
-    <MESSAGE value="now it deploys to gh-pages repo when need" />
-    <MESSAGE value="Reactstrap connected, style changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reactstrap connected, style changed" />
   </component>
 </project>
