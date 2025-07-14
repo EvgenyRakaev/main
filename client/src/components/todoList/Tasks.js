@@ -1,32 +1,48 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Button, Col, FormGroup, Input, Label, Row} from "reactstrap";
+import {useDispatch, useSelector} from "react-redux";
+import {API_URL} from "../../redux-store/store";
 
 const Tasks = (props) => {
-    function editButtonClick(id) {
-        if (!props.taskList.find(task => {
+    let todoList = useSelector((state) => state.todoList);
+    const dispatch = useDispatch();
+
+    function editTask(id) {
+        if (!todoList.find(task => {
                 if (task.id === id) return task.completed;
             }
         )) {
-            const editedTask = props.taskList.find(task => task.id === id)
+            const editedTask = todoList.find(task => task.id === id)
             props.setTaskEdit(editedTask);
         }
     }
 
-    function deleteButtonClick(id) {
-        const newTasks = props.taskList.filter(task => task.id !== id);
-        props.setTaskList(newTasks);
+    function deleteTask(id) {
+        dispatch({type: "DELETE_TASK", payload: id});
     }
 
-    function isChecked(id) {
-        const newTasks = props.taskList.map(task => task.id === id ?
-            {title: task.title, completed: !task.completed, id: task.id} :
-            task
-        );
-        props.setTaskList(newTasks);
+    function completed(id) {
+        dispatch({type: "COMPLETE_TASK", payload: id});
     }
+
+    async function getTasks() {
+        const res = await fetch(`${API_URL}/api/task`, {method: 'GET'});
+
+        const data = await res.json();
+
+        if (res.ok) {
+            console.log('✅ Tasks are loaded:', data);
+            dispatch({type: 'GET_TASK_LIST', payload: data});
+        } else {
+            console.error('❌ Tasks are not loaded:', data.error);
+        }
+    }
+    useEffect(() => {
+        getTasks();
+    }, [])
 
     return (
-        props.taskList.map(task => (
+        todoList.map(task => (
             <Row className="row-cols-lg-auto g-3 align-items-center" key={task.id}>
                 <Col>
                     <FormGroup check>
@@ -35,7 +51,7 @@ const Tasks = (props) => {
                             name="checkbox"
                             type="checkbox"
                             checked={task.completed}
-                            onChange={() => isChecked(task.id)}
+                            onChange={() => completed(task.id)}
                         />
                         <Label
                             check
@@ -47,10 +63,12 @@ const Tasks = (props) => {
                     </FormGroup>
                 </Col>
                 <Col>
-                    <Button outline size="sm" style={{minWidth: "5rem"}} color="warning" onClick={() => editButtonClick(task.id)}>
+                    <Button outline size="sm" style={{minWidth: "5rem"}} color="warning"
+                            onClick={() => editTask(task.id)}>
                         Edit
                     </Button>
-                    <Button outline size="sm" style={{minWidth: "5rem"}} color="danger" onClick={() => deleteButtonClick(task.id)}>
+                    <Button outline size="sm" style={{minWidth: "5rem"}} color="danger"
+                            onClick={() => deleteTask(task.id)}>
                         Delete
                     </Button>
                 </Col>

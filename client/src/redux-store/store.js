@@ -1,6 +1,9 @@
-import {combineReducers, legacy_createStore as createStore} from 'redux'
+import {applyMiddleware, combineReducers, legacy_createStore as createStore} from 'redux'
+import todoListReducer from "./todoListReducer";
+import {thunk} from 'redux-thunk';
 
 export const LOCAL_STORAGE_KEY = "supposedToBeUniqueKey";
+export const API_URL = process.env.REACT_APP_API_URL;
 
 function counterReducer(state = 0, action) {
 
@@ -17,24 +20,11 @@ function counterReducer(state = 0, action) {
     }
 }
 
-function todoListReducer(state = [], action) {
-    switch (action.type) {
-        case 'ADD_TASK':
-            return [...state, action.payload]
-        case 'DELETE_TASK':
-            return state.filter(task => task.id !== action.payload)
-        case 'EDIT_TASK':
-            return state.map(task => task.id === action.payload.id ? action.payload : task)
-        default:
-            return state;
-    }
-}
-
 const combinedReducers = combineReducers({
     counter: counterReducer,
     todoList: todoListReducer,
 })
 
-let store = createStore(combinedReducers)
+let store = createStore(combinedReducers, applyMiddleware(thunk));
 
 export default store;

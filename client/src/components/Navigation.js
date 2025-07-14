@@ -45,10 +45,10 @@ const Navigation = ({user, setUser}) => {
                     {!user ? (
                         <>
                             <NavItem>
-                                <NavLink tag={Link} to="/main/sign-in">Sign in</NavLink>
+                                <NavLink tag={Link} to="/sign-in">Sign in</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} to="/main/signup">Sign up</NavLink>
+                                <NavLink tag={Link} to="/sign-up">Sign up</NavLink>
                             </NavItem>
                         </>
                     ):(

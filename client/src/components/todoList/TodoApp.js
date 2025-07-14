@@ -3,13 +3,11 @@ import Form from "./Form";
 import Tasks from "./Tasks";
 import { NavLink } from "react-router";
 import {Card, CardBody, CardHeader, CloseButton} from "reactstrap";
-import {useSelector} from "react-redux";
 
 const TodoApp = (props) => {
 
     const [taskEdit, setTaskEdit] = React.useState(false);
     const [inputTask, setInputTask] = React.useState('');
-    const taskList = useSelector((state) => state.taskList);
 
     return (
         <Card

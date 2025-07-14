@@ -1,29 +1,39 @@
 import React, {useEffect} from 'react';
 import {Button, Col, Input, Label, Row, Form as Form2} from "reactstrap";
+import {useDispatch} from "react-redux";
+import {API_URL} from "../../redux-store/store";
 
 const Form = (props) => {
-    function inputSubmit(event) {
+    const dispatch = useDispatch();
+
+    async function inputSubmit(event) {
         event.preventDefault();
         if(props.inputTask){
             if (!props.taskEdit) {
-                const newTasks = [...props.taskList,
-                    {
-                        title: props.inputTask,
-                        completed: false,
-                        id: Math.random().toString(36).slice(2, 10)
-                    }
-                ];
-                props.setTaskList(newTasks);
+                const res = await fetch(`${API_URL}/api/task`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({title: props.inputTask})
+                });
+
+                const data = await res.json();
+
+                if (res.ok) {
+                    console.log('✅ Task added:', data);
+                    dispatch({type: "ADD_TASK",
+                        payload: data
+                    });
+                } else {
+                    console.error('❌ Failed to add task:', data.error);
+                }
             } else {
-                const newTasks = props.taskList.map(
-                    task => (task.id === props.taskEdit.id) ?
-                        {title: props.inputTask, completed: task.completed, id: task.id} :
-                        task
-                );
-                props.setTaskList(newTasks);
+                dispatch({type: "EDIT_TASK",
+                    payload: {...props.taskEdit, title: props.inputTask}});
             }
             props.setInputTask('');
-            props.setTaskEdit('');
+            props.setTaskEdit(false);
         }
     }
 

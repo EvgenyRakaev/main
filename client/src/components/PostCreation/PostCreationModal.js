@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import {Button, Input, Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
 import {LOCAL_STORAGE_KEY} from "../../redux-store/store"
 
 const PostCreationModal = ({updatePost, isModalOpen, setIsModalOpen}) => {
     const [post, setPost] = React.useState('');
     const [title, setTitle] = React.useState('');
+
+    const titleRef = useRef();
+    const postRef = useRef();
 
     function newPost() {
         if (post && title) {
@@ -44,9 +47,10 @@ const PostCreationModal = ({updatePost, isModalOpen, setIsModalOpen}) => {
 
 
     return (
-        <Modal isOpen={isModalOpen} toggle={toggle}>
+        <Modal isOpen={isModalOpen} toggle={toggle} onOpened={()=>titleRef.current?.focus()}>
             <ModalHeader toggle={toggle}>
                 <Input
+                    innerRef={titleRef}
                     className=""
                     type="text"
                     placeholder="Title..."
@@ -56,11 +60,16 @@ const PostCreationModal = ({updatePost, isModalOpen, setIsModalOpen}) => {
                         if (e.key === 'Enter') {
                             newPost()
                         }
+                        if (e.key === 'Tab') {
+                            e.preventDefault();
+                            postRef.current?.focus();
+                        }
                     }}
                 />
             </ModalHeader>
             <ModalBody>
                 <Input
+                    innerRef={postRef}
                     className=""
                     type="textarea"
                     placeholder="Post..."

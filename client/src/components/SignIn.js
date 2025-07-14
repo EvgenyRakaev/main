@@ -5,19 +5,19 @@ import {useNavigate} from "react-router-dom";
 
 const SignIn = ({user, setUser}) => {
 
-    const [login, setLogin] = React.useState('');
+    const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
 
     const navigate = useNavigate();
 
-    const handleLogin = async (login, password) => {
-        const res = await fetch('http://localhost:3000/api/login', {
+    const handleLogin = async (email, password) => {
+        const res = await fetch('http://localhost:3000/api/signIn', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                login: login,
+                email: email,
                 password: password
             })
         });
@@ -29,7 +29,7 @@ const SignIn = ({user, setUser}) => {
             setUser(data.user);
             localStorageSet('user', data.user);
 
-            setLogin('')
+            setEmail('')
             setPassword('')
             navigate('/main/');
         } else {
@@ -40,15 +40,15 @@ const SignIn = ({user, setUser}) => {
         <Form>
             <FormGroup floating>
                 <Input
-                    id="login"
-                    name='login'
-                    placeholder="Login"
+                    id="email"
+                    name='email'
+                    placeholder="E-mail"
                     type="text"
-                    value={login}
-                    onChange={(e) => setLogin(e.target.value)}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                 />
-                <Label for="login">
-                    Email
+                <Label for="email">
+                    E-mail
                 </Label>
             </FormGroup>
             {' '}
@@ -66,7 +66,7 @@ const SignIn = ({user, setUser}) => {
                 </Label>
             </FormGroup>
             {' '}
-            <Button onClick={() => handleLogin(login, password)}>
+            <Button onClick={() => handleLogin(email, password)}>
                 Sign In
             </Button>
         </Form>

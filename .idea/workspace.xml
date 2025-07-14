@@ -4,57 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c022444-67c6-4aa6-a807-2f1636247168" name="Changes" comment="">
+    <list default="true" id="0c022444-67c6-4aa6-a807-2f1636247168" name="Changes" comment="1. Server and DB PostgreSQL added.&#10;2. Implemented authentification.">
+      <change afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/SignUp.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/src/components/handlers/localStorage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux-store/todoListReducer.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/src/dbConnection/dbConnection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/main_project.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/eventListener.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/postPublisher.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/postTemplate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/PostCreation/PostCreationModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/PostCreation/PostCreationModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/todoList/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/todoList/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/todoList/Tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/todoList/Tasks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/todoList/TodoApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/todoList/TodoApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux-store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux-store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftMenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostCreation/PostCreation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostCreation/PostCreationModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Posts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RightMenu.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SignIn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todoList/Form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todoList/Tasks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todoList/TodoApp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/test-img.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux-store/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/remnants/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/temp-server-responses/posts-example.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/temp-server-responses/posts.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,44 +44,51 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "EvgenyRakaev"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EvgenyRakaev&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/EvgenyRakaev/main.git",
-    "accountId": "1c418613-6717-464c-b4ad-d1809b225932"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EvgenyRakaev/main.git&quot;,
+    &quot;accountId&quot;: &quot;1c418613-6717-464c-b4ad-d1809b225932&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2xy5OKwDpfxvxeOpVrZeukgGK2Y" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.server/Dockerfile.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.start.executor": "Run",
-    "ts.external.directory.path": "C:\\Users\\yevge\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.server/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\yevge\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\yevge\OneDrive\Рабочий стол\FullStack PASV\fullstack-practice\server\src\dbConnection" />
@@ -118,7 +97,9 @@
   </component>
   <component name="RunManager" selected="npm.start">
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="server/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
@@ -149,7 +130,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.26927.40" />
       </set>
     </attachedChunks>
   </component>
@@ -160,11 +141,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748897441064</updated>
-      <workItem from="1748897443144" duration="16188000" />
+      <workItem from="1748897443144" duration="16774000" />
+      <workItem from="1749101047919" duration="17000" />
+      <workItem from="1749312858107" duration="5217000" />
+      <workItem from="1749333651710" duration="12910000" />
+      <workItem from="1749599945314" duration="14000" />
+      <workItem from="1752450037310" duration="13145000" />
     </task>
+    <task id="LOCAL-00001" summary="1. Server and DB PostgreSQL added.&#10;2. Implemented authentification.">
+      <option name="closed" value="true" />
+      <created>1748917131479</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748917131479</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1. Server and DB PostgreSQL added.&#10;2. Implemented authentification." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Server and DB PostgreSQL added.&#10;2. Implemented authentification." />
   </component>
 </project>
