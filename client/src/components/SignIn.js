@@ -2,6 +2,7 @@ import React from 'react';
 import {Button, Form, FormGroup, Input, Label} from "reactstrap";
 import {localStorageSet} from "./handlers/localStorage";
 import {useNavigate} from "react-router-dom";
+import {API_URL} from "../redux-store/store";
 
 const SignIn = ({user, setUser}) => {
 
@@ -10,8 +11,9 @@ const SignIn = ({user, setUser}) => {
 
     const navigate = useNavigate();
 
-    const handleLogin = async (email, password) => {
-        const res = await fetch('http://localhost:3000/api/signIn', {
+    const handleLogin = async (event) => {
+        event.preventDefault();
+        const res = await fetch(`${API_URL}/api/signIn`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -37,7 +39,7 @@ const SignIn = ({user, setUser}) => {
         }
     }
     return (
-        <Form>
+        <Form onSubmit={handleLogin}>
             <FormGroup floating>
                 <Input
                     id="email"
@@ -66,9 +68,11 @@ const SignIn = ({user, setUser}) => {
                 </Label>
             </FormGroup>
             {' '}
-            <Button onClick={() => handleLogin(email, password)}>
+            <Button>
                 Sign In
             </Button>
+
+
         </Form>
     );
 };

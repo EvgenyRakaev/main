@@ -22,7 +22,7 @@ const Navigation = ({user, setUser}) => {
 
     return (
         <Navbar expand="md" color="light" fixed="top">
-            <NavbarBrand  tag={Link} to="/main/">Home</NavbarBrand>
+            <NavbarBrand tag={Link} to="/main/">Home</NavbarBrand>
             <NavbarToggler onClick={toggle}/>
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="me-auto" navbar>
@@ -37,6 +37,8 @@ const Navigation = ({user, setUser}) => {
                         </DropdownToggle>
                         <DropdownMenu right>
                             <DropdownItem tag={Link} to="/main/todoApp/">Todo App</DropdownItem>
+                            <DropdownItem tag={Link} to="/main/kanban/">Kanban</DropdownItem>
+                            <DropdownItem tag={Link} to="/main/whetherForecast/">Whether Forecast</DropdownItem>
                             <DropdownItem tag={Link} to="/main/shop/">Shop</DropdownItem>
                             <DropdownItem divider/>
                             <DropdownItem>Reset</DropdownItem>
@@ -51,14 +53,18 @@ const Navigation = ({user, setUser}) => {
                                 <NavLink tag={Link} to="/sign-up">Sign up</NavLink>
                             </NavItem>
                         </>
-                    ):(
-                        <NavItem>
-                            <NavLink href="#" onClick={(e) => {
-                                e.preventDefault();
-                                setUser(null)
-                                localStorageDelete('user')
-                            }}>Sign out</NavLink>
-                        </NavItem>
+                    ) : (
+                        <>
+                            <NavItem>
+                                <NavLink tag={Link} to="/profile">Profile</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink tag={Link} to="/sign-in" onClick={(e) => {
+                                    setUser(null)
+                                    localStorageDelete('user')
+                                }}>Sign out</NavLink>
+                            </NavItem>
+                        </>
                     )
                     }
                 </Nav>

@@ -4,6 +4,7 @@ const db = require('./src/dbConnection/dbConnection');
 const express = require('express');
 const cors = require('cors');
 const {hash, compare} = require("bcrypt");
+const {objectSnakeToCamel} = require('./src/caseConverter/caseConverter');
 
 
 const app = express();
@@ -70,23 +71,78 @@ app.post('/api/signIn', async (req, res) => {
 app.post('/api/signUp', async (req, res) => {
     const {email, password, firstName, lastName} = req.body;
 
-    try{
-        const result = await db.query('SELECT * FROM "user" WHERE email = $1', [email] );
+    try {
+        const result = await db.query('SELECT * FROM "user" WHERE email = $1', [email]);
 
         if (result.rows.length !== 0) {
             return res.status(401).json({error: 'This e-mail already exists'});
         } else {
             await db.query(`
-                INSERT INTO "user" (email, password, first_name, last_name, role, login) 
+                INSERT INTO "user" (email, password, first_name, last_name, role, login)
                 VALUES ($1, $2, $3, $4, $5, $6)
             `, [email, await hash(password, 10), firstName, lastName, 'user', null])
             res.status(201).json({message: 'User created successfully'})
         }
-    } catch(err) {
+    } catch (err) {
         console.error('Sign Up error:', err.message);
         res.status(500).json({error: err.message});
     }
 })
+
+app.get('/api/user/:id', async (req, res) => {
+    try {
+        const result = await db.query(
+            `SELECT email, first_name, last_name, role, login
+             FROM "user"
+             WHERE id = $1`
+            , [req.params.id]
+        );
+
+        if (result.rows.length === 0) {
+            return res.status(404).json({error: 'User not found'})
+        } else {
+            return res.status(200).json(objectSnakeToCamel(result.rows[0]));
+        }
+    } catch (err) {
+        res.status(500).json({error: err.message});
+    }
+})
+
+app.patch('/api/user/:id', async (req, res) => {
+    const {id} = req.params;
+    const {email, password, newPassword, firstName, lastName, role, login} = req.body;
+
+    try {
+        const result = await db.query('SELECT "password" FROM "user" WHERE id = $1', [id]);
+
+        if (!result.rows.length || !await compare(password, result.rows[0].password)) {
+            return res.status(401).json({error: 'Invalid password'});
+        }
+
+        if (newPassword) {
+            const hashedPassword = await hash(newPassword, 10);
+            await db.query(`UPDATE "user"
+                            SET password = $1
+                            WHERE id = $2`, [hashedPassword, id]
+            );
+        } else {
+            await db.query(`
+                UPDATE "user"
+                SET email=$1,
+                    first_name=$2,
+                    last_name=$3,
+                    role=$4,
+                    login=$5
+                WHERE id = $6`, [email, firstName, lastName, role, login, id]
+            )
+        }
+        return res.status(200).json({message: 'User updated successfully'})
+
+    } catch (error) {
+        res.status(500).json({error: error.message});
+    }
+})
+
 
 app.get('/api/task', async (req, res) => {
     try {

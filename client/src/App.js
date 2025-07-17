@@ -9,6 +9,7 @@ import SignIn from "./components/SignIn";
 import {Routes, Route, BrowserRouter, Navigate} from "react-router-dom";
 import {localStorageGet} from "./components/handlers/localStorage";
 import SignUp from "./components/SignUp";
+import UserProfile from "./components/UserProfile";
 
 function App() {
     const [taskList, setTaskList] = React.useState([]);
@@ -34,7 +35,7 @@ function App() {
                                         />
                                     }
                                     />
-                                    <Route path="/sign-in/" element={<SignIn/>}/>
+                                    <Route path="/profile/" element={<UserProfile/>}/>
                                 </>
                             ) :
                                 (
